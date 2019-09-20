@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\piero\Downloads\Trees
+CMAKE_SOURCE_DIR = C:\Users\piero\Downloads\binary-search-tree-Piero16301
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\piero\Downloads\Trees\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\piero\Downloads\binary-search-tree-Piero16301\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\piero\Downloads\Trees\cmake-build-debug\CMakeFiles C:\Users\piero\Downloads\Trees\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\piero\Downloads\binary-search-tree-Piero16301\cmake-build-debug\CMakeFiles C:\Users\piero\Downloads\binary-search-tree-Piero16301\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\piero\Downloads\Trees\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\piero\Downloads\binary-search-tree-Piero16301\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Trees.dir\build.make CMakeFiles/Trees.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mocker/mocker.obj: mocker/mocker.cpp.obj
+
+.PHONY : mocker/mocker.obj
+
+# target to build an object file
+mocker/mocker.cpp.obj:
+	$(MAKE) -f CMakeFiles\Trees.dir\build.make CMakeFiles/Trees.dir/mocker/mocker.cpp.obj
+.PHONY : mocker/mocker.cpp.obj
+
+mocker/mocker.i: mocker/mocker.cpp.i
+
+.PHONY : mocker/mocker.i
+
+# target to preprocess a source file
+mocker/mocker.cpp.i:
+	$(MAKE) -f CMakeFiles\Trees.dir\build.make CMakeFiles/Trees.dir/mocker/mocker.cpp.i
+.PHONY : mocker/mocker.cpp.i
+
+mocker/mocker.s: mocker/mocker.cpp.s
+
+.PHONY : mocker/mocker.s
+
+# target to generate assembly for a file
+mocker/mocker.cpp.s:
+	$(MAKE) -f CMakeFiles\Trees.dir\build.make CMakeFiles/Trees.dir/mocker/mocker.cpp.s
+.PHONY : mocker/mocker.cpp.s
+
+tester/tester.obj: tester/tester.cpp.obj
+
+.PHONY : tester/tester.obj
+
+# target to build an object file
+tester/tester.cpp.obj:
+	$(MAKE) -f CMakeFiles\Trees.dir\build.make CMakeFiles/Trees.dir/tester/tester.cpp.obj
+.PHONY : tester/tester.cpp.obj
+
+tester/tester.i: tester/tester.cpp.i
+
+.PHONY : tester/tester.i
+
+# target to preprocess a source file
+tester/tester.cpp.i:
+	$(MAKE) -f CMakeFiles\Trees.dir\build.make CMakeFiles/Trees.dir/tester/tester.cpp.i
+.PHONY : tester/tester.cpp.i
+
+tester/tester.s: tester/tester.cpp.s
+
+.PHONY : tester/tester.s
+
+# target to generate assembly for a file
+tester/tester.cpp.s:
+	$(MAKE) -f CMakeFiles\Trees.dir\build.make CMakeFiles/Trees.dir/tester/tester.cpp.s
+.PHONY : tester/tester.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,6 +215,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... mocker/mocker.obj
+	@echo ... mocker/mocker.i
+	@echo ... mocker/mocker.s
+	@echo ... tester/tester.obj
+	@echo ... tester/tester.i
+	@echo ... tester/tester.s
 .PHONY : help
 
 
