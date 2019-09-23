@@ -15,6 +15,10 @@ C:/Users/piero/Downloads/binary-search-tree-Piero16301/iterator.h
 C:/Users/piero/Downloads/binary-search-tree-Piero16301/iterator.h
 node.h
 C:/Users/piero/Downloads/binary-search-tree-Piero16301/node.h
+vector
+-
+stack
+-
 
 C:/Users/piero/Downloads/binary-search-tree-Piero16301/main.cpp
 iostream
@@ -29,10 +33,6 @@ type_traits
 -
 
 C:/Users/piero/Downloads/binary-search-tree-Piero16301/node.h
-
-C:/Users/piero/Downloads/binary-search-tree-Piero16301/tester/tester.cpp
-tester.h
-C:/Users/piero/Downloads/binary-search-tree-Piero16301/tester/tester.h
 
 C:/Users/piero/Downloads/binary-search-tree-Piero16301/tester/tester.h
 stdexcept

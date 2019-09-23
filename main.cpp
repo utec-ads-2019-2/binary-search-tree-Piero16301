@@ -8,9 +8,9 @@ int main(int argc, char *argv[]) {
     cout << "Binary Search Tree Practice" << endl;
     cout << "===========================================================" << endl << endl;
 
-    //Tester::execute();
+    Tester::execute();
 
-    BSTree<int> bsTree;
+    /*BSTree<int> bsTree;
     bsTree.insert(8);
     bsTree.insert(3);
     bsTree.insert(10);
@@ -26,6 +26,10 @@ int main(int argc, char *argv[]) {
     bsTree.traversePreOrder();
     cout << bsTree.size() << endl;
     cout << bsTree.height() << endl;
+    Iterator iterator = bsTree.begin();
+    cout << *iterator << endl;
+    ++iterator;
+    cout << *iterator << endl;*/
 
     return EXIT_SUCCESS;
 }

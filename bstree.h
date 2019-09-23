@@ -203,11 +203,11 @@ class BSTree {
         }
 
         Iterator<T> begin() {
-            // TODO
+            return Iterator(this->root);
         }
 
-        Iterator<T> end() { 
-            // TODO
+        Iterator<T> end() {
+            return {};
         }
 
         ~BSTree() {
