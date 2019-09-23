@@ -20,6 +20,7 @@ int main(int argc, char *argv[]) {
     bsTree.insert(7);
     bsTree.insert(14);
     bsTree.insert(13);
+    bsTree.traverseInOrder();
     bsTree.traversePostOrder();
     //bsTree.remove(13);
     bsTree.traverseInOrder();
@@ -29,7 +30,12 @@ int main(int argc, char *argv[]) {
     Iterator iterator = bsTree.begin();
     cout << *iterator << endl;
     ++iterator;
-    cout << *iterator << endl;*/
+    cout << *iterator << endl;
+
+    for (auto it = bsTree.begin(); it != bsTree.end(); ++it) {
+        cout << *it << ' ';
+    }
+    cout << endl;*/
 
     return EXIT_SUCCESS;
 }

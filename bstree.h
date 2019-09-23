@@ -128,13 +128,20 @@ class BSTree {
             return searchNode(data, this->root);
         }
 
-        void insert(T data) {
+        bool insert(T data) {
             Node<T>* temporal = new Node(data);
-            this->nodes++;
             if (this->root) {
-                newNode(data, this->root);
+                if (find(data)) {
+                    return false;
+                } else {
+                    newNode(data, this->root);
+                    this->nodes++;
+                    return true;
+                }
             } else {
                 this->root = temporal;
+                this->nodes++;
+                return true;
             }
         }
 

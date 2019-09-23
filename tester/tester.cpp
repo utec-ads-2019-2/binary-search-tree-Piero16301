@@ -40,15 +40,15 @@ void Tester::testBSFTree(Mocker mocker, vector<T> elements) {
         ++it;
     }
 
-    /*for (int j = elements.size() - 1; j >= 0; --j) {
+    for (int j = elements.size() - 1; j >= 0; --j) {
         --it;
         ASSERT(elements.at(j) == *it, "There is a problem with the iterator (--)");
-    }*/
+    }
 }
 
 template <typename T>
 void Tester::sortAndPrune(vector<T>& array) {
     sort(array.begin(), array.end());
-    //auto last = unique(array.begin(), array.end());
-    //array.erase(last, array.end());
+    auto last = unique(array.begin(), array.end());
+    array.erase(last, array.end());
 }

@@ -9,6 +9,7 @@ template <typename T>
 class Iterator {
     private:
         std::stack<Node<T>*, std::vector<Node<T>*>> nodosPrevios;
+        std::stack<Node<T>*, std::vector<Node<T>*>> memoriaNodos;
         Node<T> *current;
 
     protected:
@@ -31,6 +32,7 @@ class Iterator {
             if (this->current && this->current->left) {
                 ++*this;
             }
+            memoriaNodos.push(this->current);
         }
 
         Iterator<T>& operator=(const Iterator<T> &other) {
@@ -56,6 +58,13 @@ class Iterator {
                     this->current = nodosPrevios.top();
                 }
             }
+            memoriaNodos.push(this->current);
+            return *this;
+        }
+
+        Iterator<T>& operator--() {
+            memoriaNodos.pop();
+            this->current = memoriaNodos.top();
             return *this;
         }
 
