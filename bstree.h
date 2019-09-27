@@ -214,7 +214,8 @@ class BSTree {
         }
 
         Iterator<T> end() {
-            return {};
+            Node<T>* temporal = nullptr;
+            return Iterator(this->root, temporal);
         }
 
         ~BSTree() {

@@ -12,8 +12,8 @@ void Tester::execute() {
 
 template <typename T>
 void Tester::testBSFTree(Mocker mocker, vector<T> elements) {
-    BSTree<T> *test = new BSTree<T>;
-    for (int j = 0; j < elements.size(); ++j) {
+    auto *test = new BSTree<T>;
+    for (unsigned int j = 0; j < elements.size(); ++j) {
         test->insert(elements[j]);
         ASSERT(test->find(elements[j]), "There is a problem with the insert or find");
     }
