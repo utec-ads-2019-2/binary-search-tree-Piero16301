@@ -31,6 +31,7 @@ class BSTree {
             if (temporal->left != nullptr) {
                 newNode(data, temporal->left);
             } else {
+                // Falta el tipo template
                 Node<T>* asignar = new Node(data);
                 temporal->left = asignar;
             }
@@ -39,6 +40,7 @@ class BSTree {
             if (temporal->right != nullptr) {
                 newNode(data, temporal->right);
             } else {
+                // Falta el tipo template
                 Node<T>* asignar = new Node(data);
                 temporal->right = asignar;
             }
@@ -129,8 +131,10 @@ class BSTree {
         }
 
         bool insert(T data) {
+            // Falta el tipo template
             Node<T>* temporal = new Node(data);
             if (this->root) {
+                // El find no va a ayudar al resto de la inserción, se usa mucho procesamiento
                 if (find(data)) {
                     return false;
                 } else {
@@ -148,6 +152,7 @@ class BSTree {
         bool remove(T data) {
             if (this->root) {
                 if (this->root->data == data) {
+                    // Falta el tipo template
                     Node<T>* temporal = new Node(0);
                     temporal->left = this->root;
                     Node<T>* nodoBorrar = deleteNode(data, temporal, this->root);
@@ -210,11 +215,13 @@ class BSTree {
         }
 
         Iterator<T> begin() {
+             // Falta el tipo template
             return Iterator(this->root);
         }
 
         Iterator<T> end() {
             Node<T>* temporal = nullptr;
+            // Falta el tipo template
             return Iterator(this->root, temporal);
         }
 

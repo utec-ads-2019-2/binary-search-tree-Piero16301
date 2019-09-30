@@ -106,6 +106,7 @@ class Iterator {
         }
 
         T operator*() {
+            // Falta controlar el caso null
             return this->current->data;
         }
 };
